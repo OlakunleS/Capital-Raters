@@ -1,89 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    </link>
-    <link rel="stylesheet" type="text/css" href="nav.css">
-    </link>
-    <script src="app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entertainment Ottawa</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        </link>
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        </link>
+        <script src="app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
 
-<body>
+    <body>
 
-    <nav class="navbar">
-        <div class="navcontainer">
-            <div class="navheader">
-                <h1>Capital Raters</h1>
+        <nav class="navbar">
+            <div class="navcontainer">
+                <div class="navheader">
+                    <h1>Capital Raters</h1>
+                </div>
+                <div class="collapse" id="mainlist">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#portfolio">Progress</a></li>
+                        <li><a href="#contact">Meet our Team</a></li>
+                    </ul>
+                </div>
+                <div class="media_button">
+                    <button class="mediabuttons" id="main_buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
-            <div class="collapse" id="mainlist">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#portfolio">Progress</a></li>
-                    <li><a href="#contact">Meet our Team</a></li>
-                </ul>
+        </nav>
+
+        <div class="about-container">
+            <div class="info" id="grey">
+                <h1>Motivation</h1>
+                <p>
+                    With our system, users will be able to filter programs and festivals according to their individual tastes,
+                such as identity, music, food, etc. We started with the question “What is there to do in Ottawa?” then narrowed it down
+                to “What activities are there for university students who like arts & crafts?” 
+                </p>
             </div>
-            <div class="media_button">
-                <button class="mediabuttons" id="main_buttons">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+
+            <div class="info" id="black">
+                <h1>Data</h1>
+                <p>
+                    We have two datasets, one for winter programs from 2019, and one of cultural festivals in and around the city of Ottawa.
+                </p>
+                <img src="img/datatable.jpg">
+            </div>
+
+            <div class="info" id="grey">
+                <h1>Task Analysis</h1>
+                <p>
+                    During the interview with Prof Sprague, it quickly become clear that he, specifically was only interested in indoor
+                    dining. Prof Sprague is only one data point and since his interests were quite narrow he went against our initial
+                    assumption of what people wanted from the capital. Even so, it reaffirmed our conclusion that we needed to focus more on
+                    category/type over location. So that became our main task: to show users festivals and programs of the category they
+                    liked rather than show them all the events Ottawa had to offer.
+
+                </p>
+            </div>
+
+            <div class="info" id="black">
+                <h1>Design Process</h1>
+                
+            </div>
+
+            <div class="info" id="grey">
+                <h1>Final Visualization</h1>
+
+            </div>
+
+            <div class="info" id="black">
+                <h1>Data Analysis</h1>
+                <p>
+                    Cultural Festivals: With almost 35 events hosted, Identity is the subject that holds most of the event while the range
+                    of other subjects stays under 15, the minimum is five from Literary. We found that Ottawa is a multicultural city with
+                    many different celebration festivals from all around the world. Our purpose is to determine the target audience as well
+                    as their interest when it comes to a specific type of event.
+                    Winter Programs: The recreation guide had tons of data from various age groups and many different activities we grouped
+                    into a few subcategories. Like “sports,” the second sport, We used the number of activities because the more activities
+                    mean the more popular it is (why make ten events on the same thing when only five people planned to show up). We found
+                    that many people prefer sports activities and physical activities out of other recreational activities. We were hoping
+                    to determine what age groups preferred each activity, but the data provided changes based on age.
+
+                </p>
+            </div>
+
+            <div class="info" id="grey">
+                <h1>Conclusion</h1>
+                
             </div>
         </div>
-    </nav>
 
-    <div class="info">
-        <h1>Motivation</h1>
-        <p>
-            With our system, users will be able to filter programs and festivals according to their individual tastes,
-        such as identity, music, food, etc. We started with the question “What is there to do in Ottawa?” then narrowed it down
-        to “What activities are there for university students who like arts & crafts?” 
-        </p>
-    </div>
-
-    <div class="info">
-        <h1>Data</h1>
-        <p>
-            We have two datasets, one for winter programs from 2019, and one of cultural festivals in and around the city of Ottawa.
-        </p>
-        <img src="img/datatable.jpg">
-    </div>
-
-    <div class="info">
-        <h1>Task Analysis</h1>
-        <p>
-            During the interview with Prof Sprague, it quickly become clear that he, specifically was only interested in indoor
-            dining. Prof Sprague is only one data point and since his interests were quite narrow he went against our initial
-            assumption of what people wanted from the capital. Even so, it reaffirmed our conclusion that we needed to focus more on
-            category/type over location. So that became our main task: to show users festivals and programs of the category they
-            liked rather than show them all the events Ottawa had to offer.
-
-        </p>
-    </div>
-
-    <divclass="info">
-        <h1>Design Process</h1>
-    </div>
-
-    <div class="info">
-        <h1>Final Visualization</h1>
-    </div>
-
-    <div class="info">
-        <h1>Data Analysis</h1>
-    </div>
-
-    <div class="info">
-        <h1>Conclusion</h1>
-    </div>
-
-</body>
+    </body>
 
 </html>
