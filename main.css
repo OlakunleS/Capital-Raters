@@ -2,6 +2,11 @@
       box-sizing: border-box;
     }
     
+    
+    
+    .btn-group .button:hover {
+      background-color: #3e8e41;
+    }
     body {
       font-family: Arial;
       padding: 10px;
@@ -21,10 +26,15 @@
     }
     h2{
         color: #fff;
+        
+          text-align: center;
+  
     }
     
     p {
         color: #f0f0f0;
+        text-align: center;
+        line-height: 1.5;
     }
     
     /* Style the top navigation bar */
