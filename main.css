@@ -9,7 +9,7 @@
     }
     body {
       font-family: Arial;
-      padding: 10px;
+      padding: 0px;
       background: #000;
     }
     
@@ -30,7 +30,7 @@
           text-align: center;
   
     }
-    
+
     p {
         color: #f0f0f0;
         text-align: center;
@@ -61,8 +61,19 @@
         height: auto;
 	    object-fit: cover;
     }
+    .eventlist img{
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    .services{
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
    #grey{
        background-color: rgba(255, 255, 255, 0.5);
+       margin: 50px;
    }
     
     /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
