@@ -13,6 +13,23 @@
         <script src="app.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+        <script type="text/javascript">
+            function initViz() {
+                    var containerDiv = document.getElementById("vizContainer"),
+                        url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
+                        options = {
+                            hideTabs: true,
+                            onFirstInteractive: function () {
+                                console.log("Run this code when the viz has finished loading.");
+                            }
+                        };
+
+                    var viz = new tableau.Viz(containerDiv, url, options);
+                    // Create a viz object and embed it in the container div.
+            }
+        </script>
+    </head>
     </head>
 
     <body>
@@ -25,8 +42,6 @@
                 <div class="collapse" id="mainlist">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#portfolio">Progress</a></li>
-                        <li><a href="#contact">Meet our Team</a></li>
                     </ul>
                 </div>
                 <div class="media_button">
@@ -208,9 +223,9 @@
                 
             </div>
 
-            <div class="info" id="grey">
+            <div onload="initViz();" id="grey">
                 <h2>Final Visualization</h2>
-
+                <div id="vizContainer" style="width:800px; height:700px;"></div>
             </div>
 
             <div class="info" id="black">
